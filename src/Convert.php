@@ -100,9 +100,10 @@ class Convert
             $records
         );
 
-        // Remove double quotes.
+        // Remove return code and double quotes.
         $records = array_map(function ($lines) {
             return array_map(function ($line) {
+                $line = rtrim($line, "\n\r");
                 return trim($line, '"');
             }, $lines);
         }, $records);

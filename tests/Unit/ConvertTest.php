@@ -14,7 +14,6 @@ class ConvertTest extends TestCase
     public function test_toArray(): void
     {
         $banks = Convert::toArray($this->getCsv());
-        var_dump($banks);
 
         $this->assertCount(2, $banks);
 
