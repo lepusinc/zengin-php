@@ -1,0 +1,36 @@
+{
+    "name": "lepusinc/zengin-php",
+    "homepage": "https://github.com/lepusinc/zengin-php",
+    "description": "Zengin library for PHP",
+    "keywords": ["zengin","bank"],
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Lepus Inc.",
+            "homepage": "https://lep.jp"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/lepusinc/zengin-php/issues"
+    },
+    "require": {
+        "php": ">=8.2.0"
+    },
+    "require-dev": {
+        "composer/composer" : "^1.10.22",
+        "phpunit/phpunit": "^10.0",
+        "mockery/mockery": "^1.6",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZenginPhp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aws\\Test\\": "tests/"
+        }
+    }
+}
