@@ -60,7 +60,7 @@ class Convert
             }
 
             $branchCode = (string)$branch['branch_code'];
-            $banks[$bankCode]['branches'][$branchCode] = [
+            $banks[$bankCode]['branches'][] = [
                 'branch_code' => $branchCode,
                 'branch_name' => $branch['branch_name'],
                 'branch_name_kana' => $branch['branch_name_kana'],
